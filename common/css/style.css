@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+html, body {
+  color: #111;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
