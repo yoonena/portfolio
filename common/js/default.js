@@ -26,4 +26,6 @@ var responsiveSwiper = new Swiper(".swiper", {
 		}
 	},
 	touchEventsTarget: 'wrapper',
+	touchRatio: 0.5, 
+    touchAngle: 45, 
 });
