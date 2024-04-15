@@ -46,6 +46,7 @@ header h1 {
 }
 .container .box_wrapper .title {
   width: 30%;
+  padding-right: 20px;
 }
 .container .box_wrapper .title h2 {
   margin-bottom: 10px;
@@ -58,6 +59,15 @@ header h1 {
 }
 .container .box_wrapper .title .description p + p {
   margin-top: 5px;
+}
+.container .box_wrapper .title .description p b {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.container .box_wrapper .title .description p a {
+  margin-left: 5px;
+  color: red;
 }
 .container .box_wrapper .contents {
   position: relative;
@@ -201,6 +211,9 @@ footer {
   padding: 100px 0;
   color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
+}
+footer b {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width: 1250px) {
