@@ -24,5 +24,6 @@ var responsiveSwiper = new Swiper(".swiper", {
 			slidesPerView: 4,
 			slidesPerColumn: 4,
 		}
-	}
+	},
+	touchEventsTarget: 'wrapper',
 });
