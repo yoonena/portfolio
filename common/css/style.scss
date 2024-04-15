@@ -183,7 +183,8 @@ header{
 
     &-slide {
         height: 300px;
-        overflow: auto;
+        // overflow: auto;
+        overflow: hidden;
 
         a{
             height: auto;
