@@ -1,0 +1,225 @@
+.fullpage{
+
+    h1{
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        h3{
+            font-size: 60px;
+            font-weight: 500;
+            text-align: center;
+
+            b{
+                font-weight: 800;
+            }
+        }
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        h5{
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+
+            b{
+                font-weight: 800;
+            }
+
+            span{
+                display: block;
+                width: 100%;
+                font-size: 30px;
+            }
+        }
+    }
+    
+    .fp-arrow.fp-prev{
+        border-color: transparent rgba(0, 0, 0, 0.2) transparent transparent;
+    }
+    .fp-arrow.fp-next{
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
+    }
+
+    .h100{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        overflow: hidden;
+
+        > img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .overview{
+        .swiper-wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+    
+            .swiper-slide{
+                flex: 1;
+                height: 30vh;
+            }
+        }
+    }
+
+    .con7_verroll {
+        position: relative;
+        height: 500px;
+        margin: 0 120px;
+        overflow: hidden;
+
+        &::before{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(to bottom, #000 0%,transparent 100%);
+            z-index: 2;
+        }
+        &::after{
+            content:'';
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(to top, #000 0%,transparent 100%);
+            z-index: 1;
+        }
+
+        .swiper-wrapper {
+            transition-timing-function: linear;
+            column-gap: 30px;
+        }
+    
+        .swiper-slide {
+            text-align: center;
+            width:100%;
+            color: #fff;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .fullpage{
+
+        h1{
+            font-size: 45px;
+        }
+        h2{
+            font-size: 30px;
+        }
+    
+        .row{
+            h3{
+                font-size: 30px;
+            }
+        }
+    
+        .column{
+            h5{
+                font-size: 30px;
+
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .con7_verroll {
+            height: 60vh;
+            margin: 0 auto;
+        
+            .swiper-slide {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row{
+        position: relative;
+        h3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+            font-size: 30px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .fullpage{
+
+        h1{
+            font-size: 35px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    
+        .row{
+            h3{
+                font-size: 20px;
+            }
+        }
+    
+        .column{
+            h5{
+                font-size: 20px;
+
+                span{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .con7_verroll {
+            height: 60vh;
+            margin: 0 auto;
+        
+            .swiper-slide {
+                font-size: 14px;
+            }
+        }
+    }
+}
