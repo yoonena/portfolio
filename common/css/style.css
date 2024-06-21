@@ -1,4 +1,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+.fullpage h1 {
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+}
+.fullpage h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.fullpage .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.fullpage .row h3 {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+.fullpage .row h3 b {
+  font-weight: 800;
+}
+.fullpage .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.fullpage .column h5 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.fullpage .column h5 b {
+  font-weight: 800;
+}
+.fullpage .column h5 span {
+  display: block;
+  width: 100%;
+  font-size: 30px;
+}
+.fullpage .fp-arrow.fp-prev {
+  border-color: transparent rgba(0, 0, 0, 0.2) transparent transparent;
+}
+.fullpage .fp-arrow.fp-next {
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
+}
+.fullpage .h100 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden;
+}
+.fullpage .h100 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.fullpage .overview .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.fullpage .overview .swiper-wrapper .swiper-slide {
+  flex: 1;
+  height: 30vh;
+}
+.fullpage .con7_verroll {
+  position: relative;
+  height: 500px;
+  margin: 0 120px;
+  overflow: hidden;
+}
+.fullpage .con7_verroll::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, #000 0%, transparent 100%);
+  z-index: 2;
+}
+.fullpage .con7_verroll::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, #000 0%, transparent 100%);
+  z-index: 1;
+}
+.fullpage .con7_verroll .swiper-wrapper {
+  transition-timing-function: linear;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.fullpage .con7_verroll .swiper-slide {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 900px) {
+  .fullpage h1 {
+    font-size: 45px;
+  }
+  .fullpage h2 {
+    font-size: 30px;
+  }
+  .fullpage .row h3 {
+    font-size: 30px;
+  }
+  .fullpage .column h5 {
+    font-size: 30px;
+  }
+  .fullpage .column h5 span {
+    font-size: 20px;
+  }
+  .fullpage .con7_verroll {
+    height: 60vh;
+    margin: 0 auto;
+  }
+  .fullpage .con7_verroll .swiper-slide {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row {
+    position: relative;
+  }
+  .row h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+@media screen and (max-width: 500px) {
+  .fullpage h1 {
+    font-size: 35px;
+  }
+  .fullpage h2 {
+    font-size: 20px;
+  }
+  .fullpage .row h3 {
+    font-size: 20px;
+  }
+  .fullpage .column h5 {
+    font-size: 20px;
+  }
+  .fullpage .column h5 span {
+    font-size: 18px;
+  }
+  .fullpage .con7_verroll {
+    height: 60vh;
+    margin: 0 auto;
+  }
+  .fullpage .con7_verroll .swiper-slide {
+    font-size: 14px;
+  }
+}
 html, body {
   width: 100%;
   height: 100%;
